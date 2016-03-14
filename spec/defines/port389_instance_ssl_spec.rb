@@ -2,7 +2,7 @@ require 'spec_helper'
 
 #describe 'port389::instance::ssl', :type => :define do
 describe 'port389::instance', :type => :define do
-  let(:facts) {{ :osfamily => 'RedHat' }}
+  let(:facts) {{ :osfamily => 'RedHat', :operatingsystemmajrelease => '6' }}
   let(:pre_condition) { 'include port389' }
   let(:title) { 'ldap1' }
 
